@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Testes de página</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="cooking.png"
+    <link rel="stylesheet" type="text/css" media="screen" href="css.css" />
+    <link rel=background" type="link/png" href="https://www.dropbox.com/s/a40i7ku680oph8w/gradient_bg.png"
+    <script src="main.js"></script>
+</head>
+<style>
+    body{
+        margin: 0;
+    }
+    /* Seletores aninhados*/
+    .background{
+        background-image: url(background.png);
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: none;
+        font-size: 20px;
+        float:initial;
+        line-height: 40px;
+        text-align: center;
+        color: black;
+        background-repeat: repeat;
+
+    }
+
+ 
+
+    .fundo{
+        background-color: rgb(255, 255, 255);
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: none;
+        font-size: 20px;
+        float:initial;
+        line-height: 40px;
+        text-align: center;
+        color: black;
+        background-repeat: repeat;
+        text-align: justify;
+        animation-name: example;
+        animation-duration: 4s;
+
+    }
+    .fonte{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: none;
+        font-size: 20px;
+        float:initial;
+        line-height: 40px;
+        text-align: center;
+        color: black;
+        text-align: justify;
+        animation-name: fontes;
+        animation-duration: 4s;
+    }
+
+    }
+    #menu ul{
+        margin: 0;
+        background-color:rgb(174, 119, 226);/*cor do fundo*/
+        list-style: none;/*some os pontinhos da lista*/
+        box-shadow: 0px 2px 5px;/*sombreamento*/
+        box-shadow: rgb(182, 180, 180);
+
+    }
+    #menu ul li{
+        display: inline;/*texto alinhado para direita*/
+
+    }
+
+    #menu ul li a{
+        padding: 15px 15px;/*cresce o tamanho da linha -- espaçamento da linha*/
+        display: inline-block;
+        font-size: 20px;
+
+        color: white;/*cor da fonte*/
+        text-decoration: none;/*some a linha de link*/
+
+    }
+    #menu ul li a:hover{
+        color:fuchsia; /*cor da letra ao passar o mouse*/
+        background-color: white;/*cor ao passar o mouse no quadrado*/
+    }
+    #menu ul{
+        padding: 0;/*deixa o submenu mais alinhado*/
+    }
+    #menu ul ul{
+        display: none;
+    }
+    #menu ul li:hover > ul{
+        display: block;
+
+
+    }
+
+    #lateral{
+    margin: 0;
+    margin-right: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
+    height: 100%;
+    float: right;
+    background-color: rgb(238, 238, 238);
+    font-size: 30px;
+    animation-name: fonte;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    }
+
+
+    #lateral ul{
+        list-style: none;
+        text-decoration: none;
+    }
+
+    #main article{
+        margin: 20px;
+        text-align: center;
+        text-align: justify;
+        height: 80%;
+        width: 50%;
+        float: left;
+
+
+    }
+
+    #rodape footer{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        text-align: center;
+        background-color: rgb(174, 119, 226);
+        color: white;
+        display:inline-block;
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    @keyframes example{
+        from{background-color: rgb(174, 119, 226)}
+        to{background-color: rgb(149, 67, 226);}
+    }
+    @keyframes fonte{
+        from{color: rgb(0, 0, 0);}
+        to{color:red}
+    }
+
+    @keyframes fundo{
+        from{background-color: rgb(238, 238, 238)}
+        to{background-color: black;}
+    }
+</style>
+<body>
+    <header class="background" style="margin-top: -30px; margin-bottom: -10px; margin-left: -10px; margin-right: -10px;">
+        <h1 <p><br/>Bloguinho do trabalho</h1>
+            <br/>
+    </header>
+    <nav id="menu" style="background-color: rgb(174, 119, 226);">
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">NOTICIAS</a></li>
+            <li><a href="#">ESTADOS</a></li>
+            <li><a href="#">EM DESTAQUE</a></li>
+            <li><a href="#">FALE CONOSCO</a>
+            <ul>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Email</a></li>
+                <li><a href="#">Email</a></li>
+            </ul></li>
+        </ul>
+    </nav>
+    <section id="main">
+        <article>
+                <h1 style="text-align: center;">O que é o Lorem Ipsum?</h1>
+                <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.</p>
+                <br/><h1>De onde é que ele vem?</h1>
+                <p>Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto aleatório. Tem raízes numa peça de literatura clássica em Latim, de 45 AC, tornando-o com mais de 2000 anos. Richard McClintock, um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica, descobriu a sua origem. Lorem Ipsum vem das secções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" (Os Extremos do Bem e do Mal), por Cícero, escrito a 45AC. Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32.</p>
+            <br/>
+            <p>O pedaço mais habitual do Lorem Ipsum usado desde os anos 1500 é reproduzido abaixo para os interessados. As secções 1.10.32 e 1.10.33 do "de Finibus Bonorum et Malorum" do Cícero também estão reproduzidos na sua forma original, acompanhados pela sua tradução em Inglês, versões da tradução de 1914 por H. Rackham.</p>
+            <br/>
+            <h1>Porque é que o usamos?</h1>
+            <p>
+É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica. Logo, o uso de Lorem Ipsum leva a uma distribuição mais ou menos normal de letras, ao contrário do uso de "Conteúdo aqui, conteúdo aqui", tornando-o texto legível. Muitas ferramentas de publicação electrónica e editores de páginas web usam actualmente o Lorem Ipsum como o modelo de texto usado por omissão, e uma pesquisa por "lorem ipsum" irá encontrar muitos websites ainda na sua infância. Várias versões têm evoluído ao longo dos anos, por vezes por acidente, por vezes propositadamente (como no caso do humor).</p>
+        </article>
+    </section>
+        
+    <aside id="lateral">
+        <h3>Sua publicidade aqui</h3>
+        <img src="imagem-lateral.jpg" alt="some text" width=400 height=597>
+    </aside>
+
+    <div id="rodape">
+        <footer>
+            <h5>mensagem para ficar no rodape por enquanto</h5>
+        </footer>
+        </div>
+
+</body>
+</html>
